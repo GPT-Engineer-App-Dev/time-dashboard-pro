@@ -1,9 +1,20 @@
 import React from "react";
 
-const Suggestion = ({ task, hours }) => {
-  let message = "";
-  if (task === "admin") {
-    message = "It seems you spent a lot of time bookkeeping today, perhaps you could outsource this task?";
+const Suggestion = ({ task }) => {
+  let message;
+  switch (task) {
+    case "admin":
+      message = "It seems you spent a lot of time on administrative tasks today, perhaps you could outsource this task?";
+      break;
+    case "code":
+      message = "Great job on coding! Consider taking breaks to avoid burnout.";
+      break;
+    case "meetings":
+      message = "You had several meetings today. Ensure they are being used effectively.";
+      break;
+    default:
+      message = "";
+      break;
   }
 
   return (
