@@ -9,13 +9,21 @@ const teamMembers = [
   { id: 4, name: "Sarah Lee", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwyfHxmZW1hbGUlMjBlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcxMDc2MDk2MXww&ixlib=rb-4.0.3&q=80&w=1080" },
 ];
 
-const generateRandomStats = () => ({
-  daysWorked: Math.floor(Math.random() * 20) + 1,
-  hoursWorked: Math.floor(Math.random() * 100) + 10,
-  meetings: Math.floor(Math.random() * 20) + 1,
-  admin: Math.floor(Math.random() * 10) + 1,
-  code: Math.floor(Math.random() * 80) + 10,
-});
+const generateRandomStats = () => {
+  const code = Math.floor(Math.random() * 80) + 10;
+  const meetings = Math.floor(Math.random() * 20) + 1;
+  const admin = Math.floor(Math.random() * 10) + 1;
+  const hoursWorked = code + meetings + admin;
+  const daysWorked = Math.ceil(hoursWorked / 7);
+
+  return {
+    daysWorked,
+    hoursWorked,
+    meetings,
+    admin,
+    code,
+  };
+};
 
 const Index = () => {
   const [userStats] = useState(generateRandomStats());
@@ -23,7 +31,7 @@ const Index = () => {
 
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl font-bold mb-8">Time Tracking Dashboard</h1>
+      <h1 className="text-4xl font-bold mb-8">Dashboard</h1>
 
       <UserStats stats={userStats} />
 
