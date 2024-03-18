@@ -1,3 +1,5 @@
 @tailwind base;
+html.dark {
+}
 @tailwind components;
 @tailwind utilities;
