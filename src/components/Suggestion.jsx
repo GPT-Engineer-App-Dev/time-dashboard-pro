@@ -19,6 +19,7 @@ const Suggestion = ({ task }) => {
 
   return (
     <div className="mt-4 p-4 bg-blue-100 text-blue-700 border border-blue-200 rounded">
+      <h3 className="text-xl font-bold">AI Suggestion 🤖</h3>
       <p>{message}</p>
     </div>
   );
