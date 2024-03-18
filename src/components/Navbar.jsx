@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -6,12 +7,12 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lg font-semibold">Time Dashboard Pro</div>
         <div>
-          <a href="#" className="mr-4 hover:underline">
+          <Link to="/" className="mr-4 hover:underline">
             Home
-          </a>
-          <a href="#" className="hover:underline">
+          </Link>
+          <Link to="/about" className="hover:underline">
             About
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

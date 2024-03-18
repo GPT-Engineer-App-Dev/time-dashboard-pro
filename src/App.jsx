@@ -1,15 +1,17 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Index.jsx";
+import About from "./pages/About.jsx";
 import Navbar from "./components/Navbar.jsx";
-import Index from "./pages/Index.jsx";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Index />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
