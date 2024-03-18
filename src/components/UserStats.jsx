@@ -9,29 +9,29 @@ const UserStats = ({ stats }) => {
 
   return (
     <div className="bg-white border-2 border-blue-300 shadow-lg rounded-lg p-6 mb-8 dark:bg-gray-800 dark:border-blue-700">
-      <h2 className="text-2xl font-bold mb-4 text-blue-600 p-2">Your Stats</h2>
+      <h2 className="text-2xl font-bold mb-4 text-blue-600 p-2 dark:text-gray-300">Your Stats</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <div className="flex items-center">
             <FaCalendar className="text-blue-500 mr-2 dark:text-blue-400" />
-            <span>{daysWorked} days worked</span>
+            <span className="dark:text-gray-300">{daysWorked} days worked</span>
           </div>
           <div className="flex items-center mt-2">
             <FaClock className="text-blue-500 mr-2 dark:text-blue-400" />
-            <span>{hoursWorked} hours worked:</span>
+            <span className="dark:text-gray-300">{hoursWorked} hours worked:</span>
           </div>
           <div className="pl-6">
             <div className="flex items-center mt-1">
               <FaCode className="text-blue-500 mr-2 dark:text-blue-400" />
-              <span>{code} hours coding</span>
+              <span className="dark:text-gray-300">{code} hours coding</span>
             </div>
             <div className="flex items-center mt-1">
               <FaUsers className="text-blue-500 mr-2 dark:text-blue-400" />
-              <span>{meetings} hours in meetings</span>
+              <span className="dark:text-gray-300">{meetings} hours in meetings</span>
             </div>
             <div className="flex items-center mt-1">
               <FaFileAlt className="text-blue-500 mr-2 dark:text-blue-400" />
-              <span>{admin} hours on admin</span>
+              <span className="dark:text-gray-300">{admin} hours on admin</span>
             </div>
           </div>
         </div>
