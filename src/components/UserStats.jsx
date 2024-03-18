@@ -9,7 +9,7 @@ const UserStats = ({ stats }) => {
 
   return (
     <div className="bg-white shadow-md rounded-lg p-6 mb-8">
-      <h2 className="text-2xl font-bold mb-4">Your Stats</h2>
+      <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 text-white p-2 rounded">Your Stats</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <div className="flex items-center">
