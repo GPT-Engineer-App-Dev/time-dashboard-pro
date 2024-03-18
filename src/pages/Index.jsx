@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import UserStats from "../components/UserStats.jsx";
 import TeamStats from "../components/TeamStats.jsx";
 
@@ -31,7 +31,12 @@ const Index = () => {
 
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl font-bold mb-8">Dashboard</h1>
+      <h1 className="text-4xl font-bold mb-8 flex justify-between items-center">
+        Dashboard
+        <select className="bg-gray-200 text-gray-500 py-2 px-4 cursor-not-allowed" disabled>
+          <option>Last 30 Days</option>
+        </select>
+      </h1>
 
       <UserStats stats={userStats} />
 
