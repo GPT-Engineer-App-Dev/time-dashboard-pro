@@ -49,13 +49,14 @@ const generateRandomStats = (timeInterval) => {
     default:
       daysWorked = 30;
   }
-  const code = Math.floor(Math.random() * hoursPerDay * daysWorked);
-  const meetings = Math.floor(Math.random() * hoursPerDay * daysWorked * 0.25);
-  const admin = Math.floor(Math.random() * hoursPerDay * daysWorked * 0.1);
+  const code = Math.floor(Math.random() * (hoursPerDay * daysWorked - hoursPerDay) + hoursPerDay);
+  const meetings = Math.floor(Math.random() * (code * 0.25));
+  const admin = Math.floor(Math.random() * (code * 0.1));
   const hoursWorked = code + meetings + admin;
+  daysWorked = Math.ceil(hoursWorked / hoursPerDay);
 
   return {
-    daysWorked,
+    daysWorked: daysWorked,
     hoursWorked,
     meetings,
     admin,
