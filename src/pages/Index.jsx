@@ -80,7 +80,7 @@ const Index = () => {
     <div className="container mx-auto py-8">
       <h1 className="text-4xl font-bold mb-8 flex justify-between items-center">
         Dashboard
-        <select className="bg-gray-200 text-gray-500 py-2 px-4" value={timeInterval} onChange={handleTimeChange}>
+        <select className="py-2 px-4" value={timeInterval} onChange={handleTimeChange}>
           <option value="today">Today</option>
           <option value="last7Days">Last 7 Days</option>
           <option value="thisWeek">This Week</option>
