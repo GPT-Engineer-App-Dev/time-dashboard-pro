@@ -5,7 +5,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
-    <nav className="bg-blue-600 text-white p-4 shadow-md">
+    <nav className="bg-blue-600 text-white p-4 shadow-md dark:bg-blue-800">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lg font-semibold flex justify-between items-center w-full">
           Time Dashboard Pro

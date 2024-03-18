@@ -8,24 +8,24 @@ const TeamMember = ({ member }) => (
       <h3 className="text-xl font-bold">{member.name}</h3>
       <div className="mt-2">
         <div className="flex items-center">
-          <FaCalendar className="text-gray-500 mr-2" />
+          <FaCalendar className="text-gray-500 mr-2 dark:text-gray-400" />
           <span>{member.stats.daysWorked} days worked</span>
         </div>
         <div className="flex items-center mt-1">
-          <FaClock className="text-gray-500 mr-2" />
+          <FaClock className="text-gray-500 mr-2 dark:text-gray-400" />
           <span>{member.stats.hoursWorked} hours worked</span>
         </div>
         <div className="pl-6">
           <div className="flex items-center mt-1">
-            <FaCode className="text-gray-500 mr-2" />
+            <FaCode className="text-gray-500 mr-2 dark:text-gray-400" />
             <span>{member.stats.code} hours coding</span>
           </div>
           <div className="flex items-center mt-1">
-            <FaUsers className="text-gray-500 mr-2" />
+            <FaUsers className="text-gray-500 mr-2 dark:text-gray-400" />
             <span>{member.stats.meetings} hours in meetings</span>
           </div>
           <div className="flex items-center mt-1">
-            <FaFileAlt className="text-gray-500 mr-2" />
+            <FaFileAlt className="text-gray-500 mr-2 dark:text-gray-400" />
             <span>{member.stats.admin} hours on admin</span>
           </div>
         </div>
