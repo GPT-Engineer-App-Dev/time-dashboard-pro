@@ -1,5 +1,15 @@
 @tailwind base;
-html.dark {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply min-h-full;
+}
+
+body.dark {
+  @apply dark:bg-gray-800 dark:text-gray-300;
 }
 @tailwind components;
 @tailwind utilities;

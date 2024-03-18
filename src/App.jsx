@@ -10,7 +10,7 @@ function App() {
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "dark" : ""} id="app">
       <BrowserRouter>
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
