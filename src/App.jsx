@@ -1,14 +1,14 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Index from "./pages/Index";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Index from "./pages/Index.jsx";
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
-      <Index />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Index />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
