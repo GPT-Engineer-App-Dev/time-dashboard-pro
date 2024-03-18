@@ -14,24 +14,24 @@ const UserStats = ({ stats }) => {
         <div>
           <div className="flex items-center">
             <FaCalendar className="text-blue-500 mr-2 dark:text-blue-400" />
-            <span className="dark:text-gray-300">{daysWorked} days worked</span>
+            <span className="text-gray-700 dark:text-gray-300">{daysWorked} days worked</span>
           </div>
           <div className="flex items-center mt-2">
             <FaClock className="text-blue-500 mr-2 dark:text-blue-400" />
-            <span className="dark:text-gray-300">{hoursWorked} hours worked:</span>
+            <span className="text-gray-700 dark:text-gray-300">{hoursWorked} hours worked:</span>
           </div>
           <div className="pl-6">
             <div className="flex items-center mt-1">
               <FaCode className="text-blue-500 mr-2 dark:text-blue-400" />
-              <span className="dark:text-gray-300">{code} hours coding</span>
+              <span className="text-gray-700 dark:text-gray-300">{code} hours coding</span>
             </div>
             <div className="flex items-center mt-1">
               <FaUsers className="text-blue-500 mr-2 dark:text-blue-400" />
-              <span className="dark:text-gray-300">{meetings} hours in meetings</span>
+              <span className="text-gray-700 dark:text-gray-300">{meetings} hours in meetings</span>
             </div>
             <div className="flex items-center mt-1">
               <FaFileAlt className="text-blue-500 mr-2 dark:text-blue-400" />
-              <span className="dark:text-gray-300">{admin} hours on admin</span>
+              <span className="text-gray-700 dark:text-gray-300">{admin} hours on admin</span>
             </div>
           </div>
         </div>
