@@ -8,8 +8,8 @@ const UserStats = ({ stats }) => {
   const mostTimeConsumingTask = Object.keys(tasks).reduce((a, b) => (tasks[a] > tasks[b] ? a : b));
 
   return (
-    <div className="bg-white border-2 border-blue-300 shadow-lg rounded-lg p-6 mb-8 dark:bg-gray-800 dark:border-blue-700">
-      <h2 className="text-2xl font-bold mb-4 text-blue-600 p-2 dark:text-gray-300">Your Stats</h2>
+    <div className="bg-white border-2 border-blue-300 shadow-lg rounded-lg p-6 mb-8">
+      <h2 className="text-2xl font-bold mb-4 text-blue-600 p-2">Your Stats</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <div className="flex items-center">

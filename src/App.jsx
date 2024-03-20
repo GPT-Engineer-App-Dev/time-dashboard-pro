@@ -6,13 +6,10 @@ import Navbar from "./components/Navbar.jsx";
 import { useState } from "react";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleDarkMode = () => setDarkMode(!darkMode);
-
   return (
-    <div className={darkMode ? "dark" : ""} id="app">
+    <div id="app">
       <BrowserRouter>
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
