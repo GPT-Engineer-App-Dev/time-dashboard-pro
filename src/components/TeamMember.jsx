@@ -12,7 +12,7 @@ const TeamMember = ({ member }) => (
           <span className="text-gray-700">{member.stats.daysWorked} days worked</span>
         </div>
         <div className="flex items-center mt-1">
-          <FaClock className="text-gray-500 mr-2 dark:text-gray-400" />
+          <FaClock className="text-gray-500 mr-2" />
           <span className="text-gray-700 dark:text-gray-300">{member.stats.hoursWorked} hours worked</span>
         </div>
         <div className="pl-6">
