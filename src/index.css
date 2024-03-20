@@ -1,5 +1,4 @@
 @tailwind base;
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -7,6 +6,3 @@ html,
 body {
   @apply min-h-full;
 }
-
-@tailwind components;
-@tailwind utilities;
